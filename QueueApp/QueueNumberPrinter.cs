@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace QueueApp
 {
-    public partial class QueueControl : Form
+    public partial class QueueNumberPrinter : Form
     {
-        public QueueControl()
+        public QueueNumberPrinter()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void RecallButton_Click(object sender, EventArgs e)
         {
 
         }
