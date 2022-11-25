@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace QueueApp
 {
@@ -17,14 +18,16 @@ namespace QueueApp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void OpenDisplayWIndowButton_Click(object sender, EventArgs e)
         {
-
+            QueueDisplay newDisplayWindow = new QueueDisplay();
+            newDisplayWindow.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void OpenPrinterWindowButton_Click_1(object sender, EventArgs e)
         {
-
+            QueueNumberPrinter newPrinterWindow = new QueueNumberPrinter();
+            newPrinterWindow.Show();
         }
     }
 }

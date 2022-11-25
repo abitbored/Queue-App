@@ -37,7 +37,7 @@
             this.RecallButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.BreakButton = new System.Windows.Forms.Button();
-            this.OpenDisplayWIndowButton = new System.Windows.Forms.Button();
+            this.OpenDisplayWindowButton = new System.Windows.Forms.Button();
             this.OpenPrinterWindowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -59,7 +59,6 @@
             this.QueueControllerLabel.Size = new System.Drawing.Size(329, 54);
             this.QueueControllerLabel.TabIndex = 0;
             this.QueueControllerLabel.Text = "Queue Controller";
-            this.QueueControllerLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // ChooseLocketLabel
             // 
@@ -103,7 +102,7 @@
             // 
             // RecallButton
             // 
-            this.RecallButton.Location = new System.Drawing.Point(492, 130);
+            this.RecallButton.Location = new System.Drawing.Point(492, 147);
             this.RecallButton.Name = "RecallButton";
             this.RecallButton.Size = new System.Drawing.Size(145, 63);
             this.RecallButton.TabIndex = 5;
@@ -112,7 +111,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(492, 245);
+            this.NextButton.Location = new System.Drawing.Point(492, 262);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(145, 63);
             this.NextButton.TabIndex = 6;
@@ -121,36 +120,38 @@
             // 
             // BreakButton
             // 
-            this.BreakButton.Location = new System.Drawing.Point(492, 360);
+            this.BreakButton.Location = new System.Drawing.Point(492, 377);
             this.BreakButton.Name = "BreakButton";
             this.BreakButton.Size = new System.Drawing.Size(145, 63);
             this.BreakButton.TabIndex = 7;
             this.BreakButton.Text = "Break";
             this.BreakButton.UseVisualStyleBackColor = true;
             // 
-            // OpenDisplayWIndowButton
+            // OpenDisplayWindowButton
             // 
-            this.OpenDisplayWIndowButton.Location = new System.Drawing.Point(347, 478);
-            this.OpenDisplayWIndowButton.Name = "OpenDisplayWIndowButton";
-            this.OpenDisplayWIndowButton.Size = new System.Drawing.Size(127, 52);
-            this.OpenDisplayWIndowButton.TabIndex = 8;
-            this.OpenDisplayWIndowButton.Text = "Display";
-            this.OpenDisplayWIndowButton.UseVisualStyleBackColor = true;
+            this.OpenDisplayWindowButton.Location = new System.Drawing.Point(347, 493);
+            this.OpenDisplayWindowButton.Name = "OpenDisplayWindowButton";
+            this.OpenDisplayWindowButton.Size = new System.Drawing.Size(127, 52);
+            this.OpenDisplayWindowButton.TabIndex = 8;
+            this.OpenDisplayWindowButton.Text = "Display";
+            this.OpenDisplayWindowButton.UseVisualStyleBackColor = true;
+            this.OpenDisplayWindowButton.Click += new System.EventHandler(this.OpenDisplayWIndowButton_Click);
             // 
             // OpenPrinterWindowButton
             // 
-            this.OpenPrinterWindowButton.Location = new System.Drawing.Point(643, 478);
+            this.OpenPrinterWindowButton.Location = new System.Drawing.Point(643, 493);
             this.OpenPrinterWindowButton.Name = "OpenPrinterWindowButton";
             this.OpenPrinterWindowButton.Size = new System.Drawing.Size(127, 52);
             this.OpenPrinterWindowButton.TabIndex = 9;
             this.OpenPrinterWindowButton.Text = "Printer";
             this.OpenPrinterWindowButton.UseVisualStyleBackColor = true;
+            this.OpenPrinterWindowButton.Click += new System.EventHandler(this.OpenPrinterWindowButton_Click_1);
             // 
             // QueueControl
             // 
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.OpenPrinterWindowButton);
-            this.Controls.Add(this.OpenDisplayWIndowButton);
+            this.Controls.Add(this.OpenDisplayWindowButton);
             this.Controls.Add(this.BreakButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RecallButton);
@@ -178,7 +179,7 @@
         private Button RecallButton;
         private Button NextButton;
         private Button BreakButton;
-        private Button OpenDisplayWIndowButton;
+        private Button OpenDisplayWindowButton;
         private Button OpenPrinterWindowButton;
     }
 }
