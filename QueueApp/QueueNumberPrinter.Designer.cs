@@ -67,8 +67,10 @@
             // 
             this.YourQueueNumberTextBox.Location = new System.Drawing.Point(329, 346);
             this.YourQueueNumberTextBox.Name = "YourQueueNumberTextBox";
+            this.YourQueueNumberTextBox.ReadOnly = true;
             this.YourQueueNumberTextBox.Size = new System.Drawing.Size(125, 43);
             this.YourQueueNumberTextBox.TabIndex = 8;
+            this.YourQueueNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // QueueNumberPrinter
             // 
@@ -80,7 +82,7 @@
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "QueueNumberPrinter";
             this.Text = "QueueNumberPrinter";
             this.ResumeLayout(false);

@@ -46,6 +46,7 @@
             this.CurrentQueueDisplay.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CurrentQueueDisplay.Location = new System.Drawing.Point(217, 115);
             this.CurrentQueueDisplay.Name = "CurrentQueueDisplay";
+            this.CurrentQueueDisplay.ReadOnly = true;
             this.CurrentQueueDisplay.Size = new System.Drawing.Size(114, 74);
             this.CurrentQueueDisplay.TabIndex = 1;
             this.CurrentQueueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -55,6 +56,7 @@
             this.CurrentLocketDisplay.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CurrentLocketDisplay.Location = new System.Drawing.Point(452, 115);
             this.CurrentLocketDisplay.Name = "CurrentLocketDisplay";
+            this.CurrentLocketDisplay.ReadOnly = true;
             this.CurrentLocketDisplay.Size = new System.Drawing.Size(114, 74);
             this.CurrentLocketDisplay.TabIndex = 2;
             this.CurrentLocketDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -101,6 +103,7 @@
             this.Locket1CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Locket1CurrentQueue.Location = new System.Drawing.Point(87, 431);
             this.Locket1CurrentQueue.Name = "Locket1CurrentQueue";
+            this.Locket1CurrentQueue.ReadOnly = true;
             this.Locket1CurrentQueue.Size = new System.Drawing.Size(114, 74);
             this.Locket1CurrentQueue.TabIndex = 6;
             this.Locket1CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -119,6 +122,7 @@
             this.Locket2CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Locket2CurrentQueue.Location = new System.Drawing.Point(334, 431);
             this.Locket2CurrentQueue.Name = "Locket2CurrentQueue";
+            this.Locket2CurrentQueue.ReadOnly = true;
             this.Locket2CurrentQueue.Size = new System.Drawing.Size(114, 74);
             this.Locket2CurrentQueue.TabIndex = 8;
             this.Locket2CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,6 +141,7 @@
             this.Locket3CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Locket3CurrentQueue.Location = new System.Drawing.Point(567, 431);
             this.Locket3CurrentQueue.Name = "Locket3CurrentQueue";
+            this.Locket3CurrentQueue.ReadOnly = true;
             this.Locket3CurrentQueue.Size = new System.Drawing.Size(114, 74);
             this.Locket3CurrentQueue.TabIndex = 10;
             this.Locket3CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
