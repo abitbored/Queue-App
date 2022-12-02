@@ -20,7 +20,7 @@ namespace QueueApp
         public string QueueGeneratedNumber(string QueueNumber)
         {
             counter++;
-            QueueNumber += counter.ToString().Trim('1');
+            QueueNumber += counter.ToString().Substring(1);
             return QueueNumber;
         }
     }

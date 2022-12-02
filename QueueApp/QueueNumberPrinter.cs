@@ -12,6 +12,7 @@ namespace QueueApp
 {
     public partial class QueueNumberPrinter : Form
     {
+        private QueueClass queue = new QueueClass();
         public QueueNumberPrinter()
         {
             InitializeComponent();
@@ -19,7 +20,10 @@ namespace QueueApp
 
         private void PrintButton_Click(object sender, EventArgs e)
         {
+            NewQueueNumberLabel.Text = queue.QueueGeneratedNumber("A-");
+            QueueClass.getNumberInQueue = NewQueueNumberLabel.Text;
 
+            QueueClass.Queue.Enqueue(QueueClass.getNumberInQueue);
         }
     }
 }

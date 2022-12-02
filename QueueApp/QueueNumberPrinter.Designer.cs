@@ -65,13 +65,12 @@
             // 
             // NewQueueNumberLabel
             // 
-            this.NewQueueNumberLabel.AutoSize = true;
             this.NewQueueNumberLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NewQueueNumberLabel.Location = new System.Drawing.Point(347, 340);
+            this.NewQueueNumberLabel.Location = new System.Drawing.Point(275, 340);
             this.NewQueueNumberLabel.Name = "NewQueueNumberLabel";
-            this.NewQueueNumberLabel.Size = new System.Drawing.Size(88, 45);
+            this.NewQueueNumberLabel.Size = new System.Drawing.Size(232, 45);
             this.NewQueueNumberLabel.TabIndex = 0;
-            this.NewQueueNumberLabel.Text = "label";
+            this.NewQueueNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QueueNumberPrinter
             // 
