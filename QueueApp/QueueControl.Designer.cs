@@ -38,6 +38,8 @@
             this.BreakButton = new System.Windows.Forms.Button();
             this.OpenDisplayWindowButton = new System.Windows.Forms.Button();
             this.OpenPrinterWindowButton = new System.Windows.Forms.Button();
+            this.RefreshButton = new System.Windows.Forms.Button();
+            this.CurrentQueueNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -140,9 +142,27 @@
             this.OpenPrinterWindowButton.UseVisualStyleBackColor = true;
             this.OpenPrinterWindowButton.Click += new System.EventHandler(this.OpenPrinterWindowButton_Click_1);
             // 
+            // RefreshButton
+            // 
+            this.RefreshButton.Location = new System.Drawing.Point(245, 74);
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.Size = new System.Drawing.Size(96, 41);
+            this.RefreshButton.TabIndex = 10;
+            this.RefreshButton.Text = "Refresh";
+            this.RefreshButton.UseVisualStyleBackColor = true;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
+            // 
+            // CurrentQueueNumberLabel
+            // 
+            this.CurrentQueueNumberLabel.Location = new System.Drawing.Point(643, 24);
+            this.CurrentQueueNumberLabel.Name = "CurrentQueueNumberLabel";
+            this.CurrentQueueNumberLabel.Size = new System.Drawing.Size(76, 30);
+            this.CurrentQueueNumberLabel.TabIndex = 1;
+            // 
             // QueueControl
             // 
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.OpenPrinterWindowButton);
             this.Controls.Add(this.OpenDisplayWindowButton);
             this.Controls.Add(this.BreakButton);
@@ -150,6 +170,7 @@
             this.Controls.Add(this.RecallButton);
             this.Controls.Add(this.QueueListBox);
             this.Controls.Add(this.ChooseLocketDropDown);
+            this.Controls.Add(this.CurrentQueueNumberLabel);
             this.Controls.Add(this.ChooseLocketLabel);
             this.Controls.Add(this.QueueControllerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -172,5 +193,7 @@
         private Button BreakButton;
         private Button OpenDisplayWindowButton;
         private Button OpenPrinterWindowButton;
+        private Button RefreshButton;
+        private Label CurrentQueueNumberLabel;
     }
 }

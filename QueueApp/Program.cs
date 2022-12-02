@@ -12,6 +12,16 @@ namespace QueueApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new QueueControl());
+
+            //int totalLocket = 3;
+            //for (int i = 1; i <= totalLocket; i++)
+            //{
+            //    LocketClass locket1 = new LocketClass();
+            //}
+
+            LocketClass locket1 = new LocketClass("Locket 1", 1);
+            LocketClass locket2 = new LocketClass("Locket 2", 2);
+            LocketClass locket3 = new LocketClass("Locket 3", 3);
         }
     }
 }

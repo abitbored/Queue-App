@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,12 +38,36 @@ namespace QueueApp
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-
+            string CurrentQueue = QueueClass.Queue.Peek();
+            CurrentQueueNumberLabel.Text = CurrentQueue;
+            QueueClass.Queue.Dequeue();
+            RefreshButton.PerformClick();
         }
 
         private void BreakButton_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void QueueListBox_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            DisplayQueue(QueueClass.Queue);
+        }
+
+        public void DisplayQueue(IEnumerable queueList)
+        {
+            QueueListBox.Items.Clear();
+            foreach (object queue in queueList)
+            {
+                QueueListBox.Items.Add(queue);
+            }
+        }
+
+
     }
 }
