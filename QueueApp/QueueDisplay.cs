@@ -31,5 +31,10 @@ namespace QueueApp
         {
 
         }
+
+        private void Locket2Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

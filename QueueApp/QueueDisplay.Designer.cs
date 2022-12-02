@@ -28,140 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CurrentQueueDisplay = new System.Windows.Forms.TextBox();
-            this.CurrentLocketDisplay = new System.Windows.Forms.TextBox();
             this.CurrentQueueLabel = new System.Windows.Forms.Label();
             this.CurrentLocketLabel = new System.Windows.Forms.Label();
-            this.ToLabel = new System.Windows.Forms.Label();
             this.Locket1Label = new System.Windows.Forms.Label();
-            this.Locket1CurrentQueue = new System.Windows.Forms.TextBox();
-            this.Locket2Label = new System.Windows.Forms.Label();
-            this.Locket2CurrentQueue = new System.Windows.Forms.TextBox();
             this.Locket3Label = new System.Windows.Forms.Label();
-            this.Locket3CurrentQueue = new System.Windows.Forms.TextBox();
+            this.ToLabel = new System.Windows.Forms.Label();
+            this.Locket2Label = new System.Windows.Forms.Label();
+            this.CurrentQueueNumberLabel = new System.Windows.Forms.Label();
+            this.CurrentLocketNumberLabel = new System.Windows.Forms.Label();
+            this.CurrentLocket1QueueLabel = new System.Windows.Forms.Label();
+            this.CurrentLocket2QueueLabel = new System.Windows.Forms.Label();
+            this.CurrentLocket3QueueLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // CurrentQueueDisplay
-            // 
-            this.CurrentQueueDisplay.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CurrentQueueDisplay.Location = new System.Drawing.Point(217, 115);
-            this.CurrentQueueDisplay.Name = "CurrentQueueDisplay";
-            this.CurrentQueueDisplay.ReadOnly = true;
-            this.CurrentQueueDisplay.Size = new System.Drawing.Size(114, 74);
-            this.CurrentQueueDisplay.TabIndex = 1;
-            this.CurrentQueueDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // CurrentLocketDisplay
-            // 
-            this.CurrentLocketDisplay.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CurrentLocketDisplay.Location = new System.Drawing.Point(452, 115);
-            this.CurrentLocketDisplay.Name = "CurrentLocketDisplay";
-            this.CurrentLocketDisplay.ReadOnly = true;
-            this.CurrentLocketDisplay.Size = new System.Drawing.Size(114, 74);
-            this.CurrentLocketDisplay.TabIndex = 2;
-            this.CurrentLocketDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CurrentQueueLabel
             // 
             this.CurrentQueueLabel.AutoSize = true;
-            this.CurrentQueueLabel.Location = new System.Drawing.Point(215, 65);
+            this.CurrentQueueLabel.Location = new System.Drawing.Point(218, 92);
             this.CurrentQueueLabel.Name = "CurrentQueueLabel";
-            this.CurrentQueueLabel.Size = new System.Drawing.Size(119, 38);
+            this.CurrentQueueLabel.Size = new System.Drawing.Size(93, 30);
             this.CurrentQueueLabel.TabIndex = 3;
             this.CurrentQueueLabel.Text = "Number";
             // 
             // CurrentLocketLabel
             // 
             this.CurrentLocketLabel.AutoSize = true;
-            this.CurrentLocketLabel.Location = new System.Drawing.Point(461, 65);
+            this.CurrentLocketLabel.Location = new System.Drawing.Point(483, 92);
             this.CurrentLocketLabel.Name = "CurrentLocketLabel";
-            this.CurrentLocketLabel.Size = new System.Drawing.Size(97, 38);
+            this.CurrentLocketLabel.Size = new System.Drawing.Size(76, 30);
             this.CurrentLocketLabel.TabIndex = 4;
             this.CurrentLocketLabel.Text = "Locket";
             this.CurrentLocketLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // ToLabel
-            // 
-            this.ToLabel.AutoSize = true;
-            this.ToLabel.Location = new System.Drawing.Point(370, 133);
-            this.ToLabel.Name = "ToLabel";
-            this.ToLabel.Size = new System.Drawing.Size(42, 38);
-            this.ToLabel.TabIndex = 5;
-            this.ToLabel.Text = "to";
-            // 
             // Locket1Label
             // 
             this.Locket1Label.AutoSize = true;
-            this.Locket1Label.Location = new System.Drawing.Point(84, 381);
+            this.Locket1Label.Location = new System.Drawing.Point(87, 408);
             this.Locket1Label.Name = "Locket1Label";
-            this.Locket1Label.Size = new System.Drawing.Size(120, 38);
+            this.Locket1Label.Size = new System.Drawing.Size(94, 30);
             this.Locket1Label.TabIndex = 7;
             this.Locket1Label.Text = "Locket 1";
-            // 
-            // Locket1CurrentQueue
-            // 
-            this.Locket1CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Locket1CurrentQueue.Location = new System.Drawing.Point(87, 431);
-            this.Locket1CurrentQueue.Name = "Locket1CurrentQueue";
-            this.Locket1CurrentQueue.ReadOnly = true;
-            this.Locket1CurrentQueue.Size = new System.Drawing.Size(114, 74);
-            this.Locket1CurrentQueue.TabIndex = 6;
-            this.Locket1CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Locket2Label
-            // 
-            this.Locket2Label.AutoSize = true;
-            this.Locket2Label.Location = new System.Drawing.Point(331, 381);
-            this.Locket2Label.Name = "Locket2Label";
-            this.Locket2Label.Size = new System.Drawing.Size(120, 38);
-            this.Locket2Label.TabIndex = 9;
-            this.Locket2Label.Text = "Locket 2";
-            // 
-            // Locket2CurrentQueue
-            // 
-            this.Locket2CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Locket2CurrentQueue.Location = new System.Drawing.Point(334, 431);
-            this.Locket2CurrentQueue.Name = "Locket2CurrentQueue";
-            this.Locket2CurrentQueue.ReadOnly = true;
-            this.Locket2CurrentQueue.Size = new System.Drawing.Size(114, 74);
-            this.Locket2CurrentQueue.TabIndex = 8;
-            this.Locket2CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Locket3Label
             // 
             this.Locket3Label.AutoSize = true;
-            this.Locket3Label.Location = new System.Drawing.Point(564, 381);
+            this.Locket3Label.Location = new System.Drawing.Point(603, 408);
             this.Locket3Label.Name = "Locket3Label";
-            this.Locket3Label.Size = new System.Drawing.Size(120, 38);
+            this.Locket3Label.Size = new System.Drawing.Size(94, 30);
             this.Locket3Label.TabIndex = 11;
             this.Locket3Label.Text = "Locket 3";
             // 
-            // Locket3CurrentQueue
+            // ToLabel
             // 
-            this.Locket3CurrentQueue.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Locket3CurrentQueue.Location = new System.Drawing.Point(567, 431);
-            this.Locket3CurrentQueue.Name = "Locket3CurrentQueue";
-            this.Locket3CurrentQueue.ReadOnly = true;
-            this.Locket3CurrentQueue.Size = new System.Drawing.Size(114, 74);
-            this.Locket3CurrentQueue.TabIndex = 10;
-            this.Locket3CurrentQueue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ToLabel.AutoSize = true;
+            this.ToLabel.Location = new System.Drawing.Point(377, 155);
+            this.ToLabel.Name = "ToLabel";
+            this.ToLabel.Size = new System.Drawing.Size(33, 30);
+            this.ToLabel.TabIndex = 5;
+            this.ToLabel.Text = "to";
+            // 
+            // Locket2Label
+            // 
+            this.Locket2Label.AutoSize = true;
+            this.Locket2Label.Location = new System.Drawing.Point(346, 408);
+            this.Locket2Label.Name = "Locket2Label";
+            this.Locket2Label.Size = new System.Drawing.Size(94, 30);
+            this.Locket2Label.TabIndex = 9;
+            this.Locket2Label.Text = "Locket 2";
+            this.Locket2Label.Click += new System.EventHandler(this.Locket2Label_Click);
+            // 
+            // CurrentQueueNumberLabel
+            // 
+            this.CurrentQueueNumberLabel.AutoSize = true;
+            this.CurrentQueueNumberLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CurrentQueueNumberLabel.Location = new System.Drawing.Point(196, 143);
+            this.CurrentQueueNumberLabel.Name = "CurrentQueueNumberLabel";
+            this.CurrentQueueNumberLabel.Size = new System.Drawing.Size(137, 45);
+            this.CurrentQueueNumberLabel.TabIndex = 3;
+            this.CurrentQueueNumberLabel.Text = "Number";
+            this.CurrentQueueNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CurrentLocketNumberLabel
+            // 
+            this.CurrentLocketNumberLabel.AutoSize = true;
+            this.CurrentLocketNumberLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CurrentLocketNumberLabel.Location = new System.Drawing.Point(465, 143);
+            this.CurrentLocketNumberLabel.Name = "CurrentLocketNumberLabel";
+            this.CurrentLocketNumberLabel.Size = new System.Drawing.Size(113, 45);
+            this.CurrentLocketNumberLabel.TabIndex = 4;
+            this.CurrentLocketNumberLabel.Text = "Locket";
+            this.CurrentLocketNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CurrentLocketNumberLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // CurrentLocket1QueueLabel
+            // 
+            this.CurrentLocket1QueueLabel.AutoSize = true;
+            this.CurrentLocket1QueueLabel.Location = new System.Drawing.Point(87, 438);
+            this.CurrentLocket1QueueLabel.Name = "CurrentLocket1QueueLabel";
+            this.CurrentLocket1QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket1QueueLabel.TabIndex = 7;
+            this.CurrentLocket1QueueLabel.Text = "Locket 1";
+            this.CurrentLocket1QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CurrentLocket2QueueLabel
+            // 
+            this.CurrentLocket2QueueLabel.AutoSize = true;
+            this.CurrentLocket2QueueLabel.Location = new System.Drawing.Point(346, 438);
+            this.CurrentLocket2QueueLabel.Name = "CurrentLocket2QueueLabel";
+            this.CurrentLocket2QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket2QueueLabel.TabIndex = 9;
+            this.CurrentLocket2QueueLabel.Text = "Locket 2";
+            this.CurrentLocket2QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CurrentLocket2QueueLabel.Click += new System.EventHandler(this.Locket2Label_Click);
+            // 
+            // CurrentLocket3QueueLabel
+            // 
+            this.CurrentLocket3QueueLabel.AutoSize = true;
+            this.CurrentLocket3QueueLabel.Location = new System.Drawing.Point(603, 438);
+            this.CurrentLocket3QueueLabel.Name = "CurrentLocket3QueueLabel";
+            this.CurrentLocket3QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket3QueueLabel.TabIndex = 11;
+            this.CurrentLocket3QueueLabel.Text = "Locket 3";
+            this.CurrentLocket3QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QueueDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.CurrentLocket3QueueLabel);
             this.Controls.Add(this.Locket3Label);
-            this.Controls.Add(this.Locket3CurrentQueue);
+            this.Controls.Add(this.CurrentLocket2QueueLabel);
+            this.Controls.Add(this.CurrentLocket1QueueLabel);
             this.Controls.Add(this.Locket2Label);
-            this.Controls.Add(this.Locket2CurrentQueue);
             this.Controls.Add(this.Locket1Label);
-            this.Controls.Add(this.Locket1CurrentQueue);
             this.Controls.Add(this.ToLabel);
+            this.Controls.Add(this.CurrentLocketNumberLabel);
+            this.Controls.Add(this.CurrentQueueNumberLabel);
             this.Controls.Add(this.CurrentLocketLabel);
             this.Controls.Add(this.CurrentQueueLabel);
-            this.Controls.Add(this.CurrentLocketDisplay);
-            this.Controls.Add(this.CurrentQueueDisplay);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "QueueDisplay";
@@ -173,17 +178,16 @@
         }
 
         #endregion
-
-        private TextBox CurrentQueueDisplay;
-        private TextBox CurrentLocketDisplay;
         private Label CurrentQueueLabel;
         private Label CurrentLocketLabel;
-        private Label ToLabel;
         private Label Locket1Label;
-        private TextBox Locket1CurrentQueue;
-        private Label Locket2Label;
-        private TextBox Locket2CurrentQueue;
         private Label Locket3Label;
-        private TextBox Locket3CurrentQueue;
+        private Label ToLabel;
+        private Label Locket2Label;
+        private Label CurrentQueueNumberLabel;
+        private Label CurrentLocketNumberLabel;
+        private Label CurrentLocket1QueueLabel;
+        private Label CurrentLocket2QueueLabel;
+        private Label CurrentLocket3QueueLabel;
     }
 }

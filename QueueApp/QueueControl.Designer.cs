@@ -32,8 +32,7 @@
             this.QueueControllerLabel = new System.Windows.Forms.Label();
             this.ChooseLocketLabel = new System.Windows.Forms.Label();
             this.ChooseLocketDropDown = new System.Windows.Forms.ComboBox();
-            this.HistoryListBox = new System.Windows.Forms.ListBox();
-            this.HistoryLabel = new System.Windows.Forms.Label();
+            this.QueueListBox = new System.Windows.Forms.ListBox();
             this.RecallButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.BreakButton = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@
             this.QueueControllerLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.QueueControllerLabel.Location = new System.Drawing.Point(12, 9);
             this.QueueControllerLabel.Name = "QueueControllerLabel";
-            this.QueueControllerLabel.Size = new System.Drawing.Size(329, 54);
+            this.QueueControllerLabel.Size = new System.Drawing.Size(265, 45);
             this.QueueControllerLabel.TabIndex = 0;
             this.QueueControllerLabel.Text = "Queue Controller";
             // 
@@ -65,7 +64,7 @@
             this.ChooseLocketLabel.AutoSize = true;
             this.ChooseLocketLabel.Location = new System.Drawing.Point(12, 74);
             this.ChooseLocketLabel.Name = "ChooseLocketLabel";
-            this.ChooseLocketLabel.Size = new System.Drawing.Size(97, 38);
+            this.ChooseLocketLabel.Size = new System.Drawing.Size(76, 30);
             this.ChooseLocketLabel.TabIndex = 1;
             this.ChooseLocketLabel.Text = "Locket";
             // 
@@ -79,26 +78,17 @@
             "3"});
             this.ChooseLocketDropDown.Location = new System.Drawing.Point(115, 71);
             this.ChooseLocketDropDown.Name = "ChooseLocketDropDown";
-            this.ChooseLocketDropDown.Size = new System.Drawing.Size(76, 45);
+            this.ChooseLocketDropDown.Size = new System.Drawing.Size(76, 38);
             this.ChooseLocketDropDown.TabIndex = 2;
             // 
-            // HistoryListBox
+            // QueueListBox
             // 
-            this.HistoryListBox.FormattingEnabled = true;
-            this.HistoryListBox.ItemHeight = 37;
-            this.HistoryListBox.Location = new System.Drawing.Point(12, 171);
-            this.HistoryListBox.Name = "HistoryListBox";
-            this.HistoryListBox.Size = new System.Drawing.Size(329, 374);
-            this.HistoryListBox.TabIndex = 3;
-            // 
-            // HistoryLabel
-            // 
-            this.HistoryLabel.AutoSize = true;
-            this.HistoryLabel.Location = new System.Drawing.Point(12, 130);
-            this.HistoryLabel.Name = "HistoryLabel";
-            this.HistoryLabel.Size = new System.Drawing.Size(105, 38);
-            this.HistoryLabel.TabIndex = 4;
-            this.HistoryLabel.Text = "History";
+            this.QueueListBox.FormattingEnabled = true;
+            this.QueueListBox.ItemHeight = 30;
+            this.QueueListBox.Location = new System.Drawing.Point(12, 121);
+            this.QueueListBox.Name = "QueueListBox";
+            this.QueueListBox.Size = new System.Drawing.Size(329, 424);
+            this.QueueListBox.TabIndex = 3;
             // 
             // RecallButton
             // 
@@ -108,6 +98,7 @@
             this.RecallButton.TabIndex = 5;
             this.RecallButton.Text = "Recall";
             this.RecallButton.UseVisualStyleBackColor = true;
+            this.RecallButton.Click += new System.EventHandler(this.RecallButton_Click);
             // 
             // NextButton
             // 
@@ -117,6 +108,7 @@
             this.NextButton.TabIndex = 6;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // BreakButton
             // 
@@ -126,6 +118,7 @@
             this.BreakButton.TabIndex = 7;
             this.BreakButton.Text = "Break";
             this.BreakButton.UseVisualStyleBackColor = true;
+            this.BreakButton.Click += new System.EventHandler(this.BreakButton_Click);
             // 
             // OpenDisplayWindowButton
             // 
@@ -149,14 +142,13 @@
             // 
             // QueueControl
             // 
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.OpenPrinterWindowButton);
             this.Controls.Add(this.OpenDisplayWindowButton);
             this.Controls.Add(this.BreakButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RecallButton);
-            this.Controls.Add(this.HistoryLabel);
-            this.Controls.Add(this.HistoryListBox);
+            this.Controls.Add(this.QueueListBox);
             this.Controls.Add(this.ChooseLocketDropDown);
             this.Controls.Add(this.ChooseLocketLabel);
             this.Controls.Add(this.QueueControllerLabel);
@@ -174,8 +166,7 @@
         private Label QueueControllerLabel;
         private Label ChooseLocketLabel;
         private ComboBox ChooseLocketDropDown;
-        private ListBox HistoryListBox;
-        private Label HistoryLabel;
+        private ListBox QueueListBox;
         private Button RecallButton;
         private Button NextButton;
         private Button BreakButton;

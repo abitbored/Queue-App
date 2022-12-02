@@ -29,5 +29,20 @@ namespace QueueApp
             QueueNumberPrinter newPrinterWindow = new QueueNumberPrinter();
             newPrinterWindow.Show();
         }
+
+        private void RecallButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BreakButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

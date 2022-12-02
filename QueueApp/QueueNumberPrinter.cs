@@ -17,7 +17,7 @@ namespace QueueApp
             InitializeComponent();
         }
 
-        private void RecallButton_Click(object sender, EventArgs e)
+        private void PrintButton_Click(object sender, EventArgs e)
         {
 
         }
