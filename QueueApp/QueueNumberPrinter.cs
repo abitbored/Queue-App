@@ -13,9 +13,12 @@ namespace QueueApp
     public partial class QueueNumberPrinter : Form
     {
         private QueueClass queue = new QueueClass();
-        public QueueNumberPrinter()
+        private QueueControl queueControl;
+
+        public QueueNumberPrinter(QueueControl _queueControl)
         {
             InitializeComponent();
+            this.queueControl = _queueControl;
         }
 
         private void PrintButton_Click(object sender, EventArgs e)

@@ -158,7 +158,9 @@
             this.Controls.Add(this.CurrentLocketLabel);
             this.Controls.Add(this.CurrentQueueLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "QueueDisplay";
             this.Text = "Queue Display";
             this.Load += new System.EventHandler(this.QueueDisplay_Load);

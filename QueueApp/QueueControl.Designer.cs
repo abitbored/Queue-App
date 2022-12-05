@@ -74,10 +74,6 @@
             // 
             this.ChooseLocketDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ChooseLocketDropDown.FormattingEnabled = true;
-            this.ChooseLocketDropDown.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.ChooseLocketDropDown.Location = new System.Drawing.Point(115, 71);
             this.ChooseLocketDropDown.Name = "ChooseLocketDropDown";
             this.ChooseLocketDropDown.Size = new System.Drawing.Size(76, 38);
@@ -174,7 +170,10 @@
             this.Controls.Add(this.ChooseLocketLabel);
             this.Controls.Add(this.QueueControllerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "QueueControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Queue Controller";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,7 +192,7 @@
         private Button BreakButton;
         private Button OpenDisplayWindowButton;
         private Button OpenPrinterWindowButton;
-        private Button RefreshButton;
         private Label CurrentQueueNumberLabel;
+        internal Button RefreshButton;
     }
 }

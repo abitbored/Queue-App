@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(220, 9);
+            this.label1.Location = new System.Drawing.Point(221, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 45);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // PrintButton
             // 
-            this.PrintButton.Location = new System.Drawing.Point(319, 140);
+            this.PrintButton.Location = new System.Drawing.Point(320, 140);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(145, 63);
             this.PrintButton.TabIndex = 6;
@@ -57,7 +57,7 @@
             // YourQueueNumberLabel
             // 
             this.YourQueueNumberLabel.AutoSize = true;
-            this.YourQueueNumberLabel.Location = new System.Drawing.Point(286, 290);
+            this.YourQueueNumberLabel.Location = new System.Drawing.Point(287, 290);
             this.YourQueueNumberLabel.Name = "YourQueueNumberLabel";
             this.YourQueueNumberLabel.Size = new System.Drawing.Size(210, 30);
             this.YourQueueNumberLabel.TabIndex = 7;
@@ -76,13 +76,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.YourQueueNumberLabel);
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.NewQueueNumberLabel);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "QueueNumberPrinter";
             this.Text = "QueueNumberPrinter";
             this.ResumeLayout(false);

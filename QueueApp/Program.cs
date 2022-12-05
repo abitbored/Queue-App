@@ -19,9 +19,7 @@ namespace QueueApp
             //    LocketClass locket1 = new LocketClass();
             //}
 
-            LocketClass locket1 = new LocketClass("Locket 1", 1);
-            LocketClass locket2 = new LocketClass("Locket 2", 2);
-            LocketClass locket3 = new LocketClass("Locket 3", 3);
+            
         }
     }
 }
