@@ -35,8 +35,6 @@
             this.QueueListBox = new System.Windows.Forms.ListBox();
             this.NextButton = new System.Windows.Forms.Button();
             this.BreakButton = new System.Windows.Forms.Button();
-            this.OpenDisplayWindowButton = new System.Windows.Forms.Button();
-            this.OpenPrinterWindowButton = new System.Windows.Forms.Button();
             this.RefreshButton = new System.Windows.Forms.Button();
             this.CurrentQueueNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -107,26 +105,6 @@
             this.BreakButton.UseVisualStyleBackColor = true;
             this.BreakButton.Click += new System.EventHandler(this.BreakButton_Click);
             // 
-            // OpenDisplayWindowButton
-            // 
-            //this.OpenDisplayWindowButton.Location = new System.Drawing.Point(347, 493);
-            //this.OpenDisplayWindowButton.Name = "OpenDisplayWindowButton";
-            //this.OpenDisplayWindowButton.Size = new System.Drawing.Size(127, 52);
-            //this.OpenDisplayWindowButton.TabIndex = 8;
-            //this.OpenDisplayWindowButton.Text = "Display";
-            //this.OpenDisplayWindowButton.UseVisualStyleBackColor = true;
-            //this.OpenDisplayWindowButton.Click += new System.EventHandler(this.OpenDisplayWIndowButton_Click);
-            // 
-            // OpenPrinterWindowButton
-            // 
-            //this.OpenPrinterWindowButton.Location = new System.Drawing.Point(643, 493);
-            //this.OpenPrinterWindowButton.Name = "OpenPrinterWindowButton";
-            //this.OpenPrinterWindowButton.Size = new System.Drawing.Size(127, 52);
-            //this.OpenPrinterWindowButton.TabIndex = 9;
-            //this.OpenPrinterWindowButton.Text = "Printer";
-            //this.OpenPrinterWindowButton.UseVisualStyleBackColor = true;
-            //this.OpenPrinterWindowButton.Click += new System.EventHandler(this.OpenPrinterWindowButton_Click_1);
-            // 
             // RefreshButton
             // 
             this.RefreshButton.Location = new System.Drawing.Point(245, 74);
@@ -148,8 +126,6 @@
             // 
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.RefreshButton);
-            this.Controls.Add(this.OpenPrinterWindowButton);
-            this.Controls.Add(this.OpenDisplayWindowButton);
             this.Controls.Add(this.BreakButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.QueueListBox);
@@ -177,8 +153,6 @@
         private ListBox QueueListBox;
         private Button NextButton;
         private Button BreakButton;
-        private Button OpenDisplayWindowButton;
-        private Button OpenPrinterWindowButton;
         private Label CurrentQueueNumberLabel;
         internal Button RefreshButton;
     }
