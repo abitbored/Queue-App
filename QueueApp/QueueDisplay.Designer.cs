@@ -118,26 +118,26 @@
             // 
             // CurrentLocket1QueueLabel
             // 
-            this.CurrentLocket1QueueLabel.Location = new System.Drawing.Point(87, 438);
+            this.CurrentLocket1QueueLabel.Location = new System.Drawing.Point(53, 438);
             this.CurrentLocket1QueueLabel.Name = "CurrentLocket1QueueLabel";
-            this.CurrentLocket1QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket1QueueLabel.Size = new System.Drawing.Size(162, 30);
             this.CurrentLocket1QueueLabel.TabIndex = 7;
             this.CurrentLocket1QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CurrentLocket2QueueLabel
             // 
-            this.CurrentLocket2QueueLabel.Location = new System.Drawing.Point(346, 438);
+            this.CurrentLocket2QueueLabel.Location = new System.Drawing.Point(312, 438);
             this.CurrentLocket2QueueLabel.Name = "CurrentLocket2QueueLabel";
-            this.CurrentLocket2QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket2QueueLabel.Size = new System.Drawing.Size(162, 30);
             this.CurrentLocket2QueueLabel.TabIndex = 9;
             this.CurrentLocket2QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CurrentLocket2QueueLabel.Click += new System.EventHandler(this.Locket2Label_Click);
             // 
             // CurrentLocket3QueueLabel
             // 
-            this.CurrentLocket3QueueLabel.Location = new System.Drawing.Point(603, 438);
+            this.CurrentLocket3QueueLabel.Location = new System.Drawing.Point(569, 438);
             this.CurrentLocket3QueueLabel.Name = "CurrentLocket3QueueLabel";
-            this.CurrentLocket3QueueLabel.Size = new System.Drawing.Size(94, 30);
+            this.CurrentLocket3QueueLabel.Size = new System.Drawing.Size(162, 30);
             this.CurrentLocket3QueueLabel.TabIndex = 11;
             this.CurrentLocket3QueueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -176,10 +176,10 @@
         private Label Locket3Label;
         private Label ToLabel;
         private Label Locket2Label;
-        private Label CurrentQueueNumberLabel;
-        private Label CurrentLocketNumberLabel;
-        private Label CurrentLocket1QueueLabel;
-        private Label CurrentLocket2QueueLabel;
-        private Label CurrentLocket3QueueLabel;
+        public Label CurrentQueueNumberLabel;
+        public Label CurrentLocketNumberLabel;
+        public Label CurrentLocket1QueueLabel;
+        public Label CurrentLocket2QueueLabel;
+        public Label CurrentLocket3QueueLabel;
     }
 }

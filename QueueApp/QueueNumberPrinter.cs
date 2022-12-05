@@ -15,10 +15,9 @@ namespace QueueApp
         private QueueClass queue = new QueueClass();
         private QueueControl queueControl;
 
-        public QueueNumberPrinter(QueueControl _queueControl)
+        public QueueNumberPrinter()
         {
             InitializeComponent();
-            this.queueControl = _queueControl;
         }
 
         private void PrintButton_Click(object sender, EventArgs e)

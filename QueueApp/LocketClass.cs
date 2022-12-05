@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace QueueApp
 {
-    class LocketClass
+    public static class LocketClass
     {
-        private string name;
-        private int id;
-        public string queueNumber;
+        //private string name;
+        //private int id;
+        public static string locket1;
+        public static string locket2;
+        public static string locket3;
 
-        public LocketClass(string name, int id)
-        {
-            this.name = name;
-            this.id = id;
-        }
+        //public LocketClass(string name, int id)
+        //{
+        //    this.name = name;
+        //    this.id = id;
+        //}
     }
 }

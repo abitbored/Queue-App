@@ -12,9 +12,13 @@ namespace QueueApp
 {
     public partial class QueueDisplay : Form
     {
+        public static QueueDisplay queueDisplayInstance;
+        public Label lbl;
         public QueueDisplay()
         {
             InitializeComponent();
+            queueDisplayInstance = this;
+            lbl = CurrentLocket1QueueLabel;
         }
 
         private void QueueDisplay_Load(object sender, EventArgs e)
