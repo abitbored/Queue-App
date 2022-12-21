@@ -14,13 +14,13 @@ namespace QueueApp
 
         public QueueClass()
         {
-            counter = 1000;
+            counter = 0;
             Queue = new Queue<string>();
         }
         public string QueueGeneratedNumber(string QueueNumber)
         {
             counter++;
-            QueueNumber += counter.ToString().Substring(1);
+            QueueNumber += counter.ToString();
             return QueueNumber;
         }
     }
