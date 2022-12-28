@@ -15,9 +15,6 @@ namespace QueueApp
 {
     public partial class QueueControl : Form
     {
-        //LocketClass locket1 = new LocketClass("Locket 1", 1);
-        //LocketClass locket2 = new LocketClass("Locket 2", 2);
-        //LocketClass locket3 = new LocketClass("Locket 3", 3);
         public static QueueControl queueControlInstance;
         QueueDisplay queueDisplay = new QueueDisplay();
         public QueueControl()
@@ -39,33 +36,26 @@ namespace QueueApp
             newPrinterWindow.Show();
         }
 
-        //private void OpenQueueNumberPrinter()
-        //{
-        //    QueueNumberPrinter queueNumberPrinter = new QueueNumberPrinter(this);
-        //}
-
-        //private void OpenDisplayWIndowButton_Click(object sender, EventArgs e)
-        //{
-        //    QueueDisplay newDisplayWindow = new QueueDisplay();
-        //    newDisplayWindow.Show();
-        //}
-
-        //private void OpenPrinterWindowButton_Click_1(object sender, EventArgs e)
-        //{
-        //    QueueNumberPrinter newPrinterWindow = new QueueNumberPrinter();
-        //    newPrinterWindow.Show();
-        //}
-
         private void NextButton_Click(object sender, EventArgs e)
         {
-            if (QueueClass.Queue == null)
-            {
-                return;
-            }
-
             if (QueueClass.Queue.Count >= 1)
             {
                 SendLocketQueueNumber(CheckLocket());
+                DisplayQueue();
+
+                if (CheckLocket() == 1)
+                {
+                    PlayNotificationSound(LocketClass.locket1, 1);
+                }
+                if (CheckLocket() == 2)
+                {
+                    PlayNotificationSound(LocketClass.locket2, 2);
+                }
+                if (CheckLocket() == 3)
+                {
+                    PlayNotificationSound(LocketClass.locket3, 3);
+                }
+                QueueClass.Queue.Dequeue();
                 ClickRefresh();
             }
         }
@@ -74,17 +64,17 @@ namespace QueueApp
         {
             if (locketNumber == 1)
             {
-                LocketClass.locket1 = QueueClass.Queue.Dequeue();
+                LocketClass.locket1 = QueueClass.Queue.Peek();
             }
 
             if (locketNumber == 2)
             {
-                LocketClass.locket2 = QueueClass.Queue.Dequeue();
+                LocketClass.locket2 = QueueClass.Queue.Peek();
             }
 
             if (locketNumber == 3)
             {
-                LocketClass.locket3 = QueueClass.Queue.Dequeue();
+                LocketClass.locket3 = QueueClass.Queue.Peek();
             }
         }
 
@@ -121,43 +111,39 @@ namespace QueueApp
 
         private void RefreshButton_Click(object sender, EventArgs e)
         {
-            DisplayQueue(QueueClass.Queue);
+            DisplayQueue();
             UpdateDisplay();
         }
 
-        public void DisplayQueue(IEnumerable queueList)
+        public void DisplayQueue()
         {
             QueueListBox.Items.Clear();
-            if (queueList == null)
-            {
-                return;
-            }
 
-            foreach (object queue in queueList)
+            foreach (object queue in QueueClass.Queue)
             {
                 QueueListBox.Items.Add(queue);
             }
 
-            if (CheckLocket() == 1)
+            if (QueueClass.Queue.Count >= 1)
             {
-                CurrentQueueNumberLabel.Text = LocketClass.locket1;
-                QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket1;
-                QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "1";
-                PlayNotificationSound(LocketClass.locket1, 1);
-            }
-            if (CheckLocket() == 2)
-            {
-                CurrentQueueNumberLabel.Text = LocketClass.locket2;
-                QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket2;
-                QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "2";
-                PlayNotificationSound(LocketClass.locket2, 2);
-            }
-            if (CheckLocket() == 3)
-            {
-                CurrentQueueNumberLabel.Text = LocketClass.locket3;
-                QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket3;
-                QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "3";
-                PlayNotificationSound(LocketClass.locket3, 3);
+                if (CheckLocket() == 1)
+                {
+                    CurrentQueueNumberLabel.Text = LocketClass.locket1;
+                    QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket1;
+                    QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "1";
+                }
+                if (CheckLocket() == 2)
+                {
+                    CurrentQueueNumberLabel.Text = LocketClass.locket2;
+                    QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket2;
+                    QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "2";
+                }
+                if (CheckLocket() == 3)
+                {
+                    CurrentQueueNumberLabel.Text = LocketClass.locket3;
+                    QueueDisplay.queueDisplayInstance.CurrentQueueNumberLabel.Text = LocketClass.locket3;
+                    QueueDisplay.queueDisplayInstance.CurrentLocketNumberLabel.Text = "3";
+                }
             }
         }
 
@@ -175,48 +161,54 @@ namespace QueueApp
 
         private void PlayNotificationSound(string currentQueue, int locket)
         {
-            // discord notification
-            //SoundPlayer notificationSound = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\discord.wav");
-            //notificationSound.Play();
+            string path = @"./notification/";
 
-            SoundPlayer antrianNomor = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\antrian_nomor.wav");
-            SoundPlayer a = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\a.wav");
-            SoundPlayer menuju = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\menuju.wav");
-            SoundPlayer loket = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\loket.wav");
-            SoundPlayer satu = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\satu.wav");
-            SoundPlayer dua = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\dua.wav");
-            SoundPlayer tiga = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\tiga.wav");
+            SoundPlayer antrianNomor = new SoundPlayer(path + "antrian_nomor.wav");
+            SoundPlayer a = new SoundPlayer(path + "a.wav");
+            SoundPlayer menuju = new SoundPlayer(path + "menuju.wav");
+            SoundPlayer loket = new SoundPlayer(path + "loket.wav");
+            SoundPlayer satu = new SoundPlayer(path + "satu.wav");
+            SoundPlayer dua = new SoundPlayer(path + "dua.wav");
+            SoundPlayer tiga = new SoundPlayer(path + "tiga.wav");
 
-            string[] currentQueueArr = currentQueue.Split('-');
-            int currentQueueNumber = Int16.Parse(currentQueueArr[1]);
-
-            string antrian = Terbilang(currentQueueNumber);
-
-            string[] currentQueueTerbilang = antrian.Split(' ');
-
-            antrianNomor.PlaySync();
-            a.PlaySync();
-
-            foreach (var bilang in currentQueueTerbilang)
+            try
             {
-                SoundPlayer angka = new SoundPlayer(@"D:\coolyeah\Semester 5\Pemrograman Platform Desktop dan Embedded\code\QueueApp\QueueApp\notification\"+bilang+".wav");
-                angka.PlaySync();
+                string[] currentQueueArr = currentQueue.Split('-');
+
+                int currentQueueNumber = Int16.Parse(currentQueueArr[1]);
+
+                string antrian = Terbilang(currentQueueNumber);
+
+                string[] currentQueueTerbilang = antrian.Split(' ');
+
+                antrianNomor.PlaySync();
+                a.PlaySync();
+
+                foreach (var bilang in currentQueueTerbilang)
+                {
+                    SoundPlayer angka = new SoundPlayer(path + bilang + ".wav");
+                    angka.PlaySync();
+                }
+
+                menuju.PlaySync();
+                loket.PlaySync();
+
+                if (locket == 1)
+                {
+                    satu.PlaySync();
+                }
+                if (locket == 2)
+                {
+                    dua.PlaySync();
+                }
+                if (locket == 3)
+                {
+                    tiga.PlaySync();
+                }
             }
-
-            menuju.PlaySync();
-            loket.PlaySync();
-
-            if (locket == 1)
+            catch (NullReferenceException ex)
             {
-                satu.PlaySync();
-            }
-            if (locket == 2)
-            {
-                dua.PlaySync();
-            }
-            if (locket == 3)
-            {
-                tiga.PlaySync();
+                MessageBox.Show(ex.Message);
             }
         }
 

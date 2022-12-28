@@ -143,9 +143,10 @@
             // 
             // QueueDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ControlBox = false;
             this.Controls.Add(this.CurrentLocket3QueueLabel);
             this.Controls.Add(this.Locket3Label);
             this.Controls.Add(this.CurrentLocket2QueueLabel);
